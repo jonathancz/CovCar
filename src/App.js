@@ -49,8 +49,6 @@ class InputForm extends React.Component {
           </nav>
 
           <hr />
-
-          <Route exact path="/" component={App} />
           <Route path="/driver" component={Driver} />
           <Route path="/rider" component={Rider} />
         </div>
