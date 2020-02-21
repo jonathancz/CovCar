@@ -56,15 +56,53 @@ class InputForm extends React.Component {
     )}
   }
 
-         
+const pickupOptions = [
+    'Carter Circle', 'Mac Circle'
+  ] 
 class Driver extends React.Component {
   constructor(props) {
     super(props);
+
   }
+
+ 
+
+  addDriver() {
+      var driver = {
+        DriverId: null,
+        FirstName: null
+      };
+
+      
+  }
+
   render() {
     return (
       <div className="DriverPage">
         <h1>You are on the driver page.</h1>
+        <div className="entryFields">
+          <label>
+            First Name: 
+            <input type="text" name="firstName" />
+          </label><br></br>
+          <label>
+            Last Name: 
+            <input type="text" name="lastName" />
+          </label><br></br>
+          <label>
+            Church Name: 
+            <input type="text" name="churchName" />
+          </label><br></br>
+          <label>
+            Denomination: 
+            <input type="text" name="denomination" />
+          </label><br></br>
+          <label>
+            Departure Time: 
+            <input type="text" name="departureTime" />
+          </label><br></br>
+          <input type="submit" value="Submit" />
+        </div>
       </div>
     )
   }
